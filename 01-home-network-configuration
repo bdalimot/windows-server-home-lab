@@ -1,5 +1,33 @@
+# Home Network & DC01 Configuration
 
+## Lab Environment
 
+This lab is built in my personal home environment using a
+PLDT home internet connection and VMware Workstation.
+
+The Windows Server VM is connected through VMware NAT, allowing
+the virtual machine to access the Internet through my physical
+PC's PLDT connection.
+
+## Network Architecture
+
+```text
+PLDT Home Internet
+        │
+        ▼
+   Home Wi-Fi Router
+        │
+        ▼
+    Personal PC
+        │
+   VMware Workstation
+        │
+      NAT
+        │
+        ▼
+      DC01
+Windows Server 2022
+192.168.74.10
 
 Get-NetIPConfiguration
 Set-NetIPInterface -InterfaceIndex 5 -Dhcp Disabled
