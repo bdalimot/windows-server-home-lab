@@ -1,0 +1,59 @@
+# Windows Server Home Lab
+
+Hi! I'm **Bernard**, an IT Support professional from the Philippines.
+
+I created this repository to document my hands-on journey into **Windows Server administration, Active Directory, networking, and IT infrastructure**.
+
+I currently work in IT support and have gained experience troubleshooting end-user issues, Microsoft 365, Active Directory, Entra ID, Intune, networking, VPNs, and various IT support platforms.
+
+While I have learned a lot through real-world helpdesk experience, I wanted to strengthen my technical foundation by building my own lab environment and practicing these technologies from the ground up.
+
+---
+
+## Why I Built This Lab
+
+My goal is to move beyond simply knowing how to troubleshoot individual tickets and develop a deeper understanding of how the infrastructure behind those tickets actually works.
+
+This lab gives me a safe environment where I can:
+
+- Break things
+- Troubleshoot problems
+- Test configurations
+- Practice administration
+- Document what I learn
+- Build practical experience
+
+Everything in this repository represents something I have practiced, configured, or learned during my lab journey.
+
+---
+
+## Lab Environment
+
+The lab is being built using:
+
+- VMware Workstation
+- Windows Server
+- Windows 11
+- Active Directory Domain Services
+- DNS
+- DHCP
+- Group Policy
+- PowerShell
+
+### Planned Lab Architecture
+
+```text
+                    My Computer
+                         |
+                 VMware Workstation
+                         |
+             +-----------+-----------+
+             |                       |
+       Windows Server           Windows 11
+          VM #1                  VM #2
+             |                       |
+       Domain Controller        Domain Client
+             |
+       +-----+-----+
+       |     |     |
+      AD    DNS   DHCP
