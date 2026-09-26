@@ -1,0 +1,12 @@
+
+
+
+Get-NetIPConfiguration
+Set-NetIPInterface -InterfaceIndex 5 -Dhcp Disabled
+Get-NetIPAddress -InterfaceIndex 5 -AddressFamily IPv4 | Remove-NetIPAddress -Confirm:$False
+New-NetIPAddress -InterfaceIndex 5 -IPAddress 192.168.74.10 -PrefixLength 24
+Set-DnsClientServerAddress -InterfaceIndex 5 -ServerAddresses 192.168.74.2
+New-NetRoute -InterfaceIndex 5 -DestinationPrefix "0.0.0.0/0" -NextHop 192.168.74.2
+Get-NetIPConfiguration
+ping 192.168.74.2
+ping 8.8.8.8
