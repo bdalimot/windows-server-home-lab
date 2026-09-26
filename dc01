@@ -1,0 +1,32 @@
+# DC01 – Windows Server Configuration
+
+## Overview
+
+DC01 is the Windows Server 2022 virtual machine used as the
+primary server for my Windows Server Home Lab.
+
+The server is hosted in VMware Workstation and uses my home
+PLDT Wi-Fi connection through VMware NAT networking.
+
+## Server Configuration
+
+| Setting | Value |
+|---|---|
+| Server Name | DC01 |
+| Operating System | Windows Server 2022 Standard Evaluation |
+| Edition | Desktop Experience |
+| RAM | 8 GB |
+| Storage | 80 GB |
+| Virtualization | VMware Workstation |
+| Network | VMware NAT |
+
+## Purpose
+
+DC01 will provide centralized Windows Server services for the
+home lab, including:
+
+- Active Directory Domain Services
+- DNS
+- User and computer management
+- Group Policy
+- Domain authentication
