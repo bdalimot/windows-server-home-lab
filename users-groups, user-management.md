@@ -32,3 +32,22 @@ homelab.local
 
 Organizational Units can also be used as a target for Group Policy
 and delegated administration.
+
+
+## Group Policy
+
+A Group Policy Object (GPO) named `IT Security Policy` was created
+and linked to the `IT` Organizational Unit.
+
+The GPO was configured with the following user policy:
+
+- Remove and prevent access to the Shut Down, Restart, Sleep, and
+  Hibernate commands
+
+The policy was tested on the Windows 11 client using the
+`egatchalian` domain account.
+
+After running `gpupdate /force`, the Power options were restricted
+and only the Lock option remained available.
+
+This confirmed that the GPO was successfully applied to the user.
