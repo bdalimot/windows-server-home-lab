@@ -38,3 +38,6 @@ New-NetRoute -InterfaceIndex 5 -DestinationPrefix "0.0.0.0/0" -NextHop 192.168.7
 Get-NetIPConfiguration
 ping 192.168.74.2
 ping 8.8.8.8
+
+
+
